@@ -1,1 +1,3 @@
-"# emotd" 
+emotd.com
+
+coming soon....
