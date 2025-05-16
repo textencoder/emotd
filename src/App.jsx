@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       {
-        loading
+        loading === true
         &&
         <svg
         id="monogram-logo"
@@ -34,7 +34,7 @@ function App() {
       }
 
       {
-        !loading 
+        loading === false
         &&
         <form onSubmit={handleSubmit} className="input-area">
         <img src="./emotd_com_logo.svg" alt="" />
