@@ -4,11 +4,11 @@ import "./App.css";
 function App() {
   const [loading, setLoading] = useState(true)
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false)
-    }, 4000)
-  }, [])
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoading(false)
+  //   }, 4000)
+  // }, [])
 
   const handleSubmit = (event) => {
     event.preventDefault()
