@@ -47,8 +47,8 @@ img {
 }
 
 span {
-  width: 140px;
-  height: 70px;
+  width: 120px;
+  aspect-ratio: 2/1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,30 +59,31 @@ span {
   transform-origin: bottom left;
 
   svg {
-    width: 18%;
+    width: 16.6%;
     animation: appear 0.2s linear;
+    fill: var(--color-grey);
   }
 
   svg:nth-of-type(1) {
-    fill: var(--color-first-bubble);
-    animation: bounce 1s infinite;
+    /* fill: var(--color-first-bubble); */
+    animation: bounce 1s ease-in-out infinite;
   }
 
   svg:nth-of-type(2) {
-    fill: var(--color-second-bubble);
-    animation: bounce 1s infinite 0.25s;
+    /* fill: var(--color-second-bubble); */
+    animation: bounce 1s ease-in-out infinite 0.25s;
   }
 
   svg:nth-of-type(3) {
-    fill: var(--color-third-bubble);
-    animation: bounce 1s infinite 0.5s;
+    /* fill: var(--color-third-bubble); */
+    animation: bounce 1s ease-in-out infinite 0.5s;
   }
 }
 
 span::after {
   content: "";
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  aspect-ratio: 1;
   position: absolute;
   bottom: 0;
   left: -10px;
