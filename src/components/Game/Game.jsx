@@ -1,3 +1,5 @@
+import styles from "./Game.module.css"
+
 const Game = () => {
     let board = Array(10).fill(null);
     console.log(board)
@@ -11,8 +13,12 @@ const Game = () => {
     })
 
     return (
-        <div className="board">
-            {boardTiles}    
+        <div className={styles.gameMessage}>
+            <div></div>
+           <div> {boardTiles}    </div>
+           <div></div>
         </div>
     )
 }
+
+export default Game;

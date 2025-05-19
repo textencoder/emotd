@@ -29,23 +29,5 @@ main {
     position: relative;
   }
 
-  div::after {
-    content: "";
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    bottom: 0;
-    right: -10px;
-    background-color: white;
-    border-radius: 10px;
-  }
-
-  .gameMessage {
-    background-color: white;
-    height: 100%;
-    aspect-ratio: 14/15;
-    justify-self: end;
-    border-radius: 30px;
-    position: relative;
-  }
+ 
 }
