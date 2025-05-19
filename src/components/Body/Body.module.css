@@ -19,11 +19,18 @@ main {
         display: flex;
         align-self: end;
         border-radius: 35px;
-        background: linear-gradient(
-      135deg,
-      var(--color-light-green),
-      var(--color-dark-green)
-    );
+        position: relative;
+    }
+
+    div::after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      bottom: 0;
+      right: -10px;
+      background-color: white;
+      border-radius: 10px;
     }
 
     div:nth-of-type(2) {
@@ -32,11 +39,7 @@ main {
         width: 400px;
         display: flex;
         align-self: end;
-        border-radius: 25px;
-        background: linear-gradient(
-      135deg,
-      var(--color-light-green),
-      var(--color-dark-green)
-    );
+        border-radius: 30px;
+        position: relative;
     }
 }

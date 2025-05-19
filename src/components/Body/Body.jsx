@@ -20,8 +20,8 @@ const Body = () => {
     return (
         <main className={styles.main}>
             <p className="elza-medium">{headlines[number]}</p>
-            <div></div>
-            <div></div>
+            <div className="opal player-message"></div>
+            <div className="opal game-message"></div>
         </main>
     )
 }
