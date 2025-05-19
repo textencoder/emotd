@@ -1,11 +1,11 @@
 .loader {
-  width: 120px;
+  width: 90px;
   aspect-ratio: 2/1;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 35px;
-  gap: 10px;
+  gap: 7.5px;
   position: relative;
   animation: appear 0.2s linear;
   transform-origin: bottom left;

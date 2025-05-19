@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import styles from "./Body.module.css"
+import Loader from "../Loader/Loader"
 
 const Body = () => {
     const [number, setNumber] = useState(0)
@@ -20,8 +21,9 @@ const Body = () => {
     return (
         <main className={styles.main}>
             <p className="elza-medium">{headlines[number]}</p>
-            <div className="opal player-message"></div>
-            <div className="opal game-message"></div>
+            {/* <div className="opal player-message"></div> */}
+            <Loader className={styles.loader}/>
+            <div className={`opal ${styles.gameMessage}`}></div>
         </main>
     )
 }
