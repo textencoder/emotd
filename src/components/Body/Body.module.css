@@ -4,7 +4,7 @@ main {
     justify-items: start;
     align-items: center;
     padding: 10px 100px;
-    
+    gap: 5px;
     height: 85vh;
     width: 100%;
 
@@ -39,9 +39,15 @@ main {
     .gameMessage {
         background-color: white;
         height:100%;
-        aspect-ratio: 13/14;
+        aspect-ratio: 14/15;
         justify-self: end;
         border-radius: 30px;
         position: relative;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        padding: 10px 15px;
     }
 }
