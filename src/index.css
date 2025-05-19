@@ -32,6 +32,7 @@ body {
   background: linear-gradient(135deg, var(--color-grey), var(--color-dark));
   display: grid;
   place-items: center;
+  touch-action: none;
 }
 
 #root {
@@ -43,7 +44,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 600px;
+  max-width: 720px;
   padding: 12px;
 }
 

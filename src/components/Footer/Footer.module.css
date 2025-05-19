@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 92.5px;
+    
 
     button {
         border-radius: 100px;
@@ -28,6 +28,7 @@
     button:nth-of-type(3) {
         width: 17.5%;
         min-width: 65px;
+        max-width: 85px;
     }
 
     button:nth-of-type(3) {
@@ -49,8 +50,3 @@
     }
 }
 
-@media screen and (max-width: 600px) {
-    .footer {
-        padding: 0 2.5px;
-    }
-}

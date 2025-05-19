@@ -1,53 +1,51 @@
 main {
-    display: grid;
-    grid-template-rows: 0.5fr 1fr 6fr;
-    justify-items: start;
-    align-items: center;
-    padding: 10px 100px;
-    gap: 5px;
-    height: 85vh;
-    width: 100%;
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 6fr;
+  justify-items: start;
+  align-items: center;
+  padding: 10px;
+  gap: 5px;
+  height: 85vh;
+  width: 100%;
 
-    p {
-        color: var(--color-headline-gray);
-        font-size: 0.8rem;
-        justify-self: center;
-        align-self: start;
-        cursor: pointer;
-    }
+  p {
+    color: var(--color-headline-gray);
+    font-size: 0.8rem;
+    justify-self: center;
+    align-self: start;
+    cursor: pointer;
+  }
 
-    .player-message {
-        background-color: white;
-        height: 45px;
-        width: 350px;
-        
-        border-radius: 35px;
-        position: relative;
-    }
+  p:hover {
+    color: white;
+  }
 
-    div::after {
-      content: "";
-      width: 10px;
-      height: 10px;
-      position: absolute;
-      bottom: 0;
-      right: -10px;
-      background-color: white;
-      border-radius: 10px;
-    }
+  .player-message {
+    background-color: white;
+    height: 45px;
+    width: 350px;
 
-    .gameMessage {
-        background-color: white;
-        height:100%;
-        aspect-ratio: 14/15;
-        justify-self: end;
-        border-radius: 30px;
-        position: relative;
-    }
-}
+    border-radius: 35px;
+    position: relative;
+  }
 
-@media screen and (max-width: 600px) {
-    main {
-        padding: 10px 15px;
-    }
+  div::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .gameMessage {
+    background-color: white;
+    height: 100%;
+    aspect-ratio: 14/15;
+    justify-self: end;
+    border-radius: 30px;
+    position: relative;
+  }
 }
