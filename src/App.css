@@ -1,5 +1,3 @@
-
-
 @keyframes bounce {
   0% {
     transform: scale(0.96);
@@ -57,19 +55,17 @@ span {
   border-radius: 35px;
   gap: 10px;
   position: relative;
-  animation: appear 0.2s 1;
+  animation: appear 0.2s linear;
   transform-origin: bottom left;
 
   svg {
     width: 18%;
-    animation: appear 0.2s 1;
+    animation: appear 0.2s linear;
   }
-  
 
   svg:nth-of-type(1) {
     fill: var(--color-first-bubble);
     animation: bounce 1s infinite;
-    
   }
 
   svg:nth-of-type(2) {
@@ -81,20 +77,30 @@ span {
     fill: var(--color-third-bubble);
     animation: bounce 1s infinite 0.5s;
   }
-
 }
 
 span::after {
   content: "";
-      width: 12px;
-      height: 12px;
-      position: absolute;
-      bottom: 0;
-      left: -10px;
-      background : linear-gradient(135deg, rgba(253, 235, 243, 1) 0%, rgba(247, 234, 243, 1) 11.24%, rgba(250, 241, 242, 1) 23.03%, rgba(255, 254, 240, 1) 35.39%, rgba(251, 251, 240, 1) 47.8%, rgba(240, 243, 242, 1) 59.52%, rgba(221, 229, 244, 1) 70.93%, rgba(220, 228, 244, 1) 71.35%, rgba(254, 233, 223, 1) 100%);
-      border-radius: 10px;
-      animation: appear 0.1s 1;
-      transform-origin: bottom left;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  bottom: 0;
+  left: -10px;
+  background: linear-gradient(
+    135deg,
+    rgba(253, 235, 243, 1) 0%,
+    rgba(247, 234, 243, 1) 11.24%,
+    rgba(250, 241, 242, 1) 23.03%,
+    rgba(255, 254, 240, 1) 35.39%,
+    rgba(251, 251, 240, 1) 47.8%,
+    rgba(240, 243, 242, 1) 59.52%,
+    rgba(221, 229, 244, 1) 70.93%,
+    rgba(220, 228, 244, 1) 71.35%,
+    rgba(254, 233, 223, 1) 100%
+  );
+  border-radius: 10px;
+  animation: appear 0.1s linear;
+  transform-origin: bottom left;
 }
 
 @keyframes appear {
