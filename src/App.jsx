@@ -5,7 +5,9 @@ import Body from "./components/Body/Body";
 import Footer from "./components/Footer/Footer";
 import Loader from "./components/Loader/Loader";
 function App() {
-  const [loading, setLoading] = useState(null)
+  const [loading, setLoading] = useState(true)
+
+  //Emotd – Slide. Solve. Share.
 
   // useEffect(() => {
   //   setTimeout(() => {
@@ -34,11 +36,15 @@ function App() {
         </form>
       }
 
+      {loading === null && 
+      <>
       <Header />
 
       <Body />
 
       <Footer />
+      </>
+      }
 
       {
         loading === true 
